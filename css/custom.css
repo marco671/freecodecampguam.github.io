@@ -1,0 +1,11 @@
+.navbar-inverse {
+	background-color: #006400;
+}
+
+.back-space {
+	background: url("https://tchoff.files.wordpress.com/2011/11/dsc_74002.jpg") no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
