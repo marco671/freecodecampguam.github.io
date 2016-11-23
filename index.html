@@ -76,7 +76,7 @@
         <div class="container">
           <div class="carousel-caption">
             <h1>Free Education</h1>
-            <p>Using the Free Code Camp web development curriculum as our entry point, we instruct in and explore many programming fields of study. If you want to learn anything, just ask!</p>
+            <p>With access to free curriculums in many IT and Software Development fields, FCCG strives to get everyone the education they need<span id="replace">..</span>.</p>
             <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
           </div>
         </div>
@@ -86,7 +86,13 @@
         <div class="container">
           <div class="carousel-caption">
             <h1>Engaging Community</h1>
-            <p>We enjoy learning and creating together and offer help on our chatrooms as well as at our meetups.</p>
+            <p>Join Community Outreach and Events <br>
+            Learn and Create with local help and support <br>
+
+              Access an Online community of 200,000+ developers <br>
+              Local help and support, community outreach and events
+            Alongside community outreach and events, we are also a support network for people to learn and create
+             learn and create together, providing help and a support network for coders here on island.</p>
             <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
           </div>
         </div>
@@ -205,7 +211,14 @@
   </script>
   <script src="js/bootstrap.min.js"></script>
   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <script src="bootstrap-3.3.7/assets/js/ie10-viewport-bug-workaround.js"></script>
+  <!-- <script src="bootstrap-3.3.7/assets/js/ie10-viewport-bug-workaround.js"></script> -->
+  <script type="text/javascript" src="js/replacejs/replace.js"></script>
+  <script type="text/javascript">
+    replaceJs({
+      element: document.getElementById('replace'),
+      words: [".."," to start their career"," to start a hobby"/*," to connect with loved ones"*/," to build something amazing"," to land a job"," to feed their passion","",""]
+    });
+  </script>
 </body>
 
 </html>
