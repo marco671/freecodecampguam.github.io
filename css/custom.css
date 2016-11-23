@@ -1,0 +1,13 @@
+body {
+	padding-top: 50px;
+}
+.navbar-inverse {
+	background-color: #006400;
+}
+
+
+@media (min-width: 768px) {
+.navbar-wrapper .navbar {
+	border-radius: 0px;
+}
+}
