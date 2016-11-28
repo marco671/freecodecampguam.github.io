@@ -11,7 +11,20 @@
 
 }
 
-#header-text {
-	font-family: "saxmonoregular", Georgia, Serif;
+
+#header-text{
+	font-family: 'saxmonoregular', Georgia, Serif;
 }
+
+h2 {
+	font-family: "Roboto", Verdana, Arial;
+	font-weight: 500;
+}
+
+p{
+	font-family: "Roboto", Verdana, Arial;
+	font-weight: 400;
+}
+
+
 
