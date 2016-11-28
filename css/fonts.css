@@ -1,0 +1,17 @@
+/* saxMono Font */
+@font-face {
+	font-family: 'saxmonoregular';
+	src: url('fonts/saxmono-webfont.eot');
+	src: url('fonts/saxmono-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/saxmono-webfont.woff') format('woff'),
+		 url('fonts/saxmono-webfont.ttf') format('truetype'),
+		 url('fonts/saxmono-webfont.svg#saxmonoregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+#header-text {
+	font-family: "saxmonoregular", Georgia, Serif;
+}
+
