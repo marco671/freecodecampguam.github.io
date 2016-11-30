@@ -21,12 +21,14 @@
 h2 {
 	font-family: "Roboto", Verdana, Arial;
 	font-weight: 500;
+	padding-top: 5%;
 }
 
 /* Roboto Regular */
 p{
 	font-family: "Roboto", Verdana, Arial;
 	font-weight: 400;
+	font-size: 1.3em;
 }
 
 
