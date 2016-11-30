@@ -90,6 +90,21 @@ Ages 13+ (how do we say that while not alienating older people? Maybe don't ment
 
 * Event loops and Vectors  
 
+#### Misc ideas
+
+* Go through curriculum and distill it
+* have slides about fundamental concepts that we go through interactively at set points in time?
+    * flow of execution
+    * variables
+    * conditionals (logic?)
+    * loops
+    * functions
+    * objects?
+* recommend / force people to group up to make the projects? Maybe even to go through the curriculum?
+* choose some set projects that we can recommend, go through how their structure should be beforehand and define sections that could be delegated to people to help with teamwork? Nudge them that direction when they go through it? ... not sounding like such a great idea anymore.
+* Pi/parts as prizes at least.
+* have sponsors donate parts (old parts or new) to the game cabinets after the bootcamp and in exchange we put their logos and such on the game cabinet they sponsored?
+
 
 
 
