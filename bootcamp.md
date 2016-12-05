@@ -3,7 +3,7 @@
 ![](https://udemy-images.udemy.com/course/750x422/573646_ec31_3.jpg)
 
 #### Learn the fundamentals of programming and game development through PyGame. 
-Join us as we dive into retro game development! Friendly competition and prizes, .. curriculum/learning, and team up to make a game!..
+Join us as we dive into retro game development! Friendly competition and prizes, engaging curriculum, and team up to make a game!..
 Ages 13+ (how do we say that while not alienating older people? Maybe don't mention the age. Or say Ages 13-99)
 (Mention somewhere about getting connected to a growing community / movement to bring technology and software development to Guam?)
 
