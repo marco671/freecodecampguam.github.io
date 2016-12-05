@@ -7,6 +7,9 @@ Join us as we dive into retro game development! Friendly competition and prizes,
 Ages 13+ (how do we say that while not alienating older people? Maybe don't mention the age. Or say Ages 13-99)
 (Mention somewhere about getting connected to a growing community / movement to bring technology and software development to Guam?)
 
+[beginners](http://inventwithpython.com/chapters/)
+[advanced](http://inventwithpython.com/pygame/chapters/)
+
 
 ** Day 1 **  
 
@@ -56,10 +59,13 @@ Ages 13+ (how do we say that while not alienating older people? Maybe don't ment
 
 * Help from Sponsors  
 
-* DIY cabinets will be sold to charity  
+* Homemade game cabinets 'art' installment for Charity  
 
-    + what charity will the cabinets be going to?
-    + should charity cabinets come with Raspberry PI 3 and PyGame that was developed at the Event?
+    + what charity(s)?
+    + where are we setting this up?
+    + how long will it stay up?
+    + what is happening with the cabinets afterwards?
+    + where are we getting the materials / Pis?
 
 ***
 
@@ -69,31 +75,23 @@ Ages 13+ (how do we say that while not alienating older people? Maybe don't ment
 
 (https://inventwithpython.com/pygame/chapters/)
 
-* Some topics we should probably be familiar/comfortable with before the bootcamp:
+Some topics we should probably be familiar/comfortable with before the bootcamp:
 
 * Object Oriented Programming
-
 * A game loop  
-
 * Making rudimentary physics  
-
 * Time and movement - Velocity
-
 * Interacting with graphics libraries  
-
 * Tranformations  
-
 * Understanding placement and movement in the game world  
-
 * Events? (Async?)
 * States? Menus, event screens  
-
 * Event loops and Vectors  
 
 #### Misc ideas
 
 * Go through curriculum and distill it
-* have slides about fundamental concepts that we go through interactively at set points in time?
+* have slides about fundamental concepts that we go through with user interation at set points in time?
     * flow of execution
     * variables
     * conditionals (logic?)
@@ -103,7 +101,8 @@ Ages 13+ (how do we say that while not alienating older people? Maybe don't ment
 * recommend / force people to group up to make the projects? Maybe even to go through the curriculum?
 * choose some set projects that we can recommend, go through how their structure should be beforehand and define sections that could be delegated to people to help with teamwork? Nudge them that direction when they go through it? ... not sounding like such a great idea anymore.
 * Pi/parts as prizes at least.
-* have sponsors donate parts (old parts or new) to the game cabinets after the bootcamp and in exchange we put their logos and such on the game cabinet they sponsored?
+* have sponsors donate parts/Pis (old parts or new) to the game cabinets after the bootcamp and in exchange we put their logos and such on the game cabinet they sponsored?
+    * have the teams present their game idea and designs to the sponsors and have the sponsors choose "teams"? kinda like a competition between sponsors
 
 
 
