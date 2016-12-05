@@ -41,7 +41,7 @@ Ages 13+ (how do we say that while not alienating older people? Maybe don't ment
 
 ** Day 3 **
 
-    Field Trip to Makers Space.
+    Field Trip to MakerSpace.
 
     Introduce them to Tommy and Val + BoHCfE&I
 
