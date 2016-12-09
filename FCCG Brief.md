@@ -54,7 +54,7 @@ We have a [(Work In Progess) website](https://freecodecampguam.github.io/) that 
 * connect with schools and teachers
 * start FCCSaipan
 
-If you would like to help contribute to the website, please email [ccarlson@docomopacific.com](mailto:ccarlson@docomopacific.com) or post an issue on the [website's github](https://github.com/FreeCodeCampGuam/freecodecampguam.github.io/issues).
+If you would like to help contribute to the website, please email [ccarlson@docomopacific.com](mailto:ccarlson@docomopacific.com) or post an issue on the [website's github](https://github.com/FreeCodeCampGuam/freecodecampguam.github.io/issues/new).
 
 #### Social Media  
 [Join our Facebook Group](https://www.facebook.com/groups/free.code.camp.guam) for info on when we meet. Drop a post if you have any questions 👍  
