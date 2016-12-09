@@ -14,7 +14,7 @@ FreeCodeCampGuam is a community of programmers and artists dedicated to providin
 
 ## Silicon Village ([slides](https://drive.google.com/open?id=1wBRl_wZwFHr988mdtQBvDazmCAoW6ZJ7GWAFjArkFuc))  
 The umbrella project FCCG started from.
-Created by many members from Chamber of Commerce and SHRM with the goal of fostering a IT/Techonolgy ecosystem here on Guam.  
+Created by many members from Chamber of Commerce and SHRM with the goal of fostering an IT/Techonology ecosystem here on Guam.  
 ## Free Code Camp Guam ([slides](https://drive.google.com/open?id=1ScIE1XqmlmvRxvtb28NOoL-vtaLLKqfIfr1r_bph_iM))  
 A community-oriented group created from one of the project legs of Silicon Village.  
 We have become the "feet on the ground" for the pent up demand the companies and the people of Guam have for technology in our education, job force, and market.  
@@ -44,7 +44,7 @@ FCCG@JFK meets (double-check these):
 
 #### Links/Resources:
 
-We have a ton of projects / events in planned. Here is an incomplete list: [Tentitive Events/Projects list](https://drive.google.com/open?id=1StzKbmley0WBTotUPBJ3tG8FBOS_bKnuO2Zo0eIAOWI)  
+We have a ton of projects and events planned. Here is an incomplete list: [Tentitive Events/Projects list](https://drive.google.com/open?id=1StzKbmley0WBTotUPBJ3tG8FBOS_bKnuO2Zo0eIAOWI)  
 
 We have a [(Work In Progess) website](https://freecodecampguam.github.io/) that we'll need to complete in order to:
 
