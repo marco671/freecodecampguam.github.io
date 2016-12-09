@@ -48,7 +48,7 @@ We have a ton of projects and events planned. Here is an incomplete list: [Tenti
 
 We have a [(Work In Progess) website](https://freecodecampguam.github.io/) that we'll need to complete in order to:
 
-* move forward with our [Retro Game Dev bootcamp](bootcamp.md) scheduled for February
+* move forward with our [Retro Game Dev bootcamp](bootcamp.md#retro-games--february) scheduled for February
 * better connect with our sponsors  
 * get the word out to the island
 * connect with schools and teachers
