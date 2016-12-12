@@ -72,6 +72,11 @@ New Proposed date and times:
 
 ![](http://www.geeky-gadgets.com/wp-content/uploads/2013/12/Porta-Pi-Raspberry-Pi-Mini-Arcade-Cabinet.jpg)
 
+### Possible Prizes:
+
+1. Raspberry Pi
+2. C.H.I.Ps (dev / pocket)
+
 
 ###Notes:  
 * Design an instructions diagram for the cabinet (each person gets one).  
