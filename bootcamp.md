@@ -1,15 +1,36 @@
-#Retro Games  (January)
+#Retro Games  (February)
 
 ![](https://udemy-images.udemy.com/course/750x422/573646_ec31_3.jpg)
+
+_* this is a WIP document with brief info and notes about our upcoming bootcamp. Pardon the mess._
 
 #### Learn the fundamentals of programming and game development through PyGame. 
 Join us as we dive into retro game development! Friendly competition and prizes, engaging curriculum, and team up to make a game!..
 Ages 13+ (how do we say that while not alienating older people? Maybe don't mention the age. Or say Ages 13-99)
 (Mention somewhere about getting connected to a growing community / movement to bring technology and software development to Guam?)
 
-[beginners](http://inventwithpython.com/chapters/)
-[advanced](http://inventwithpython.com/pygame/chapters/)
+> Create a curriculum from these  
+\* [beginners](http://inventwithpython.com/chapters/)  
+\* [advanced](http://inventwithpython.com/pygame/chapters/)  
+\* [other](http://www.balloonbuilding.com/)
 
+---
+
+### Schedule Update (Dec 7th)
+
+New Proposed date and times:  
+#### February  
+2 hour meetups: 6:30pm - 8:30pm
+
+| Mon | Wed | Fri | Focus | 
+|---|---|---|---|  
+| 6th | 8th | 10th | Mini-Projects. Learning necessary skills | 
+| 13th | 15th | 17th | Guided Project. Go through the creation of the final Retro game. Those comfortable are free to work on other their own retro game idea. |
+
+
+---
+
+### Old Schedule
 
 ** Day 1 **  
 
