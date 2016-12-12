@@ -1,3 +1,6 @@
+.navbar-inverse {
+	background-color: #006400;
+}
 #override-carousel {
   position: absolute;
   object-fit: cover; /* Makes the image maintain pixel ratio and crops instead of stretching */
