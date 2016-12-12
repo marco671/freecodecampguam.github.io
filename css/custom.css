@@ -1,3 +1,6 @@
+body {
+	padding-top: 50px;
+}
 .navbar-inverse {
 	background-color: #006400;
 }
@@ -17,4 +20,9 @@
 
 @media screen and (min-width: 800px) {
   #override-carousel {top: -30%;} /* Centers the image for wide screens */
+}
+@media (min-width: 768px) {
+.navbar-wrapper .navbar {
+	border-radius: 0px;
+}
 }
