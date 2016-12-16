@@ -1,0 +1,35 @@
+/* saxMono Font */
+
+/*@font-face {
+	font-family: 'saxMono';
+	src: url('fonts/saxMono.eot');
+	src: url('fonts/saxMono.eot?#iefix') format('embedded-opentype'),
+		url('fonts/saxMono.woff') format('woff'),
+		url('fonts/saxMono.ttf') format('truetype'),
+		url('fonts/saxMono.svg#saxMono') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}*/
+
+
+
+#header-text{
+	font-family: saxMono, Georgia, Serif;
+}
+
+/*Roboto Medium*/
+h2 {
+	font-family: "Roboto", Verdana, Arial;
+	font-weight: 500;
+	padding-top: 5%;
+}
+
+/* Roboto Regular */
+p{
+	font-family: "Roboto", Verdana, Arial;
+	font-weight: 400;
+	font-size: 1.3em;
+}
+
+
+

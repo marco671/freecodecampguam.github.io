@@ -1,4 +1,18 @@
 <!DOCTYPE html>
+
+<style>
+@font-face {
+  font-family: 'saxMono';
+  src: url('fonts/saxMono.eot');
+  src: url('fonts/saxMono.eot?#iefix') format('embedded-opentype'),
+    url('fonts/saxMono.woff') format('woff'),
+    url('fonts/saxMono.ttf') format('truetype'),
+    url('fonts/saxMono.svg#saxMono') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+</style>
+
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -13,6 +27,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="bootstrap-3.3.7/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
@@ -25,6 +40,11 @@
 
     <!-- Custom styles for this template -->
     <link href="css/carousel.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/fonts.css" media="all" rel="stylesheet" type="text/css"/>
+
+    <!--TEMPORARY - Font Imports-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -41,8 +61,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand hidden-xs" href="index.html">FreeCodeCampGuam</a>
-              <a class="navbar-brand visible-xs-* hidden-sm hidden-md hidden-lg" href="index.html">FCCG</a>
+              <a id="header-text" class="navbar-brand hidden-xs" href="index.html">FreeCodeCampGuam</a>
+              <a id="header-text" class="navbar-brand visible-xs-* hidden-sm hidden-md hidden-lg" href="index.html">FCCG</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
@@ -58,64 +78,161 @@
     </div>
 
 
+    <!--
+    Audience:
+      - 30 and below
+      - Sponsors
+      - Potential sponsors
+      - Parents
+    -->
+
+    <!-- 0. Jasper -->
+    <!-- pictures and styling -->
+    <!-- nice pic :thumbsup: -->
+    <!-- thanks -->
+
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
     <div class="container marketing">
 
+<!-- 1. Probably Patrick -->
+<!-- should we put something in here (anywhere on the page) about learning topics / what we can teach / learn? -->
 
       <!-- START THE FEATURETTES -->
       <div class="row featurette">
         <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">About Us</h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <h2 class="featurette-heading">What is FreeCodeCamp Guam?</h2>
+          <p class="lead">FreeCodeCamp Guam is a community of programmers and artists dedicated to providing support for local developers, educating aspiring coders, and nuturing Guam's technological ecosystem. Together, through community outreach, we aim to build a productive and healthy<!-- yeah some other word maybe? --> environment for programmers to hone their skills and grow<!-- "As individuals?" -->.<!--who we are. what our goals / values are. what we do. what we learn. how we can help, etc.--></p>
         </div>
         <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" src="http://placehold.it/500x500" alt="Generic placeholder image">
+        <!--Jasper will be working on this <3 -->
+          <img class="featurette-image img-responsive center-block" src="images/web_about.png" alt="FreeCodeCamp Guam">
+
         </div>
       </div>
 
       <hr class="featurette-divider">
 
+<!-- 2. Chovin -->
+
       <!-- /END THE FEATURETTES -->
-      
-            <!-- Three columns of text below the carousel -->
-      <div class="row text-center">
-        <div class="col-lg-3">
-          <img class="img-circle" src="logos/facebook/FB-f-Logo__blue_144.png" alt="Generic placeholder image" width="140" height="140">
-          <h2>Facebook</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-3">
-          <img class="img-circle" src="logos/github/GitHub-Mark-120px-plus.png" alt="Generic placeholder image" width="140" height="140">
-          <h2>Github</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-3">
-          <img class="img-circle" src="logos/instagram/Instagram-v051916.png" alt="Generic placeholder image" width="140" height="140">
-          <h2>Instagram</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-3">
-          <img class="img-circle" src="http://placehold.it/140x140" alt="Generic placeholder image" width="140" height="140">
-          <h2>Email</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
+      <h2 class="featurette-heading">How we got started</h2>
+      <div class="row featurette">
+        <div class="col-lg-12">
+          <h3 class="featurette-heading">Silicon Village</h3>
+          <p>
+          In March of 2016, members from the Guam Chamber of Commerce and SHRM Guam Chapter <!-- Might be worth un-acronyming SHRM so people know what it is --> met to discuss the difficulties in finding IT skills here on island. They concluded that because of our unique <!-- geographic --> location and the fact that we are the connection point of many undersea cables, among other things, that Guam is the perfect place to build a market for technology. <!-- place to.. start/build a technology echosystem | build a technology market | something about economy?-->
+          With this in mind, they created the Silicon Village project with the goal of ...
+          by creating a technology infrastructure and nurturing the community to support it.
+          <!-- ?? well then what is a "technology infrastructure"? -->
 
-     <hr class="featurette-divider">
+          <!-- moved from below section -->
+          After the creation of Silicon Village, its first major focus was to create a program capable of gathering young minds with the incentive to learn technological skills, while cultivating an environment suitable to craft bonds between peers. Not long after, Free Code Camp was born. <!--USING THEIR ULTRA SUPER POWERS, FREEY! CODEY! & CAMPER! DEDICATED THEIR LIFE TO FIGHTING BUGS, AND SEGMENT-FAULT-CRASHES-OF-DOOM!!!-->
+          <ul>
+            <li></li>
+            <li></li>
+          </ul>
+          <!-- text about silicon village, how it got started, who is in it, its goals, etc. -->
+          </p>
+          <img class="featurette-image img-responsive center-block" src="http://placehold.it/1300x300" alt="img of umbrella or something?">
+        </div><!-- /.col-lg-4 -->
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
 
+<!-- 3. Johnny -->
+<!-- links moved to .floo-links.txt -->
+
+          <h3 class="featurette-heading">The Birth of FCCG</h3>
+          <p>FCCG exploded on the scene with notable<!-- ? --> success. Over the period the official program took place, FCCG was able to gather people spanning multiple age groups, and inspire the curious to contribute their efforts to develop skills in the fields of computer science.
+
+          <br />With a collection of accolades and feats to their name<!-- Consider specifying what accolades/feats-->, FCCG soon began to contend Silicon Village in efforts within the tech community. Free Code Camp Guam became notably visible, and has become independent in its activities, and has been a growing organization since.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+
+        <!-- 4. Jake -->
+        <!-- links moved to .floo-links.txt -->
+        <!-- oh make sure to add FCC Saipan -->
+        <!--
+        Past: (should probably put in the above section)
+            bootcamp
+
+        Now:
+            GWC
+            FCCG@JFK
+
+        Future:
+            aquaponics manager
+            nudibranch database
+            collab drawing game for troubled kids
+
+            retro gaming camp / art installment
+            International FCC Hackathon
+
+            Saipan bootcamp
+
+
+        should we not mention these possible future involvements in schools?
+            OKKODO
+            iLearn
+
+
+        -->
+
+
+          <h3 class="featurette-heading">Now and in the future</h3>
+          <p>blurb overview about things we're trying to do and why</p>
+          <p>Stuff we're doing currently: GWC, JFK, bootcamps, etc</p>
+          <img class="featurette-image img-responsive center-block" src="http://placehold.it/1300x300" alt="timeline graph of our history. make interactive in phase 2? (so they can get info on past events)">
+          <p>Stuff we're doing in the future
+
+          <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis laboriosam sequi, sapiente iure molestias ea reprehenderit vero aliquam laborum dolor voluptate blanditiis porro, facere, inventore distinctio! Obcaecati, et. Est, aliquam?</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+
+        <!-- 5.
+        Probably, Maybe, Who Knows, Jasper? -->
+        <!-- should we do this? -->
+
+          <h3 class="featurette-heading">Sponsors?</h3>
+          <p>don't mention sponsors here right? should have their own page? should we link that page here? Should we link both sponsor and contact here?
+
+          <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis laboriosam sequi, sapiente iure molestias ea reprehenderit vero aliquam laborum dolor voluptate blanditiis porro, facere, inventore distinctio! Obcaecati, et. Est, aliquam?</p>
+        </div>
+      </div>
       <!-- FOOTER -->
-      <footer>
-        <h2 class="featurette-heading">Contributors</h2>
-        <p>List contributors here</p>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; FreeCodeCampGuam &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      <footer class="bd-footer text-muted">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-md-2 pull-right">
+              <p class="pull-right"><a href="#">Back to top</a></p>
+            </div>
+            <div class="col-md-4">
+              <p>&copy; FreeCodeCampGuam &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+            </div>
+
+            <div class="col-md-6">
+              <ul class="bd-footer-links list-inline">
+                <li>Contact us:</li>
+                <li><a href="https://www.facebook.com/groups/free.code.camp.Guam" target="_blank">Facebook</a></li>
+                <li><a href="https://github.com/FreeCodeCampGuam/" target="_blank">Github</a></li>
+                <li><a href="https://twitter.com/FCCGuam" target="_blank">Twitter</a></li>
+                <!-- is target blank needed here? -->
+                <li><a href="mailto:FCCG@gmail.com" target="_blank">FCCG@gmail.com</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
       </footer>
 
     </div><!-- /.container -->

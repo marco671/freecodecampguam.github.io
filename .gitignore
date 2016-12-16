@@ -87,3 +87,11 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+# Sublime project settings
+*.sublime-project
+*.sublime-workspace
+
+# floobits stuff
+.floo*
+floo-links.txt
