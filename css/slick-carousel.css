@@ -1,0 +1,31 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+.splashCarousel {
+	width: 100%;
+	margin: 70px auto;
+}
+.slick-slide {
+	margin: 0px 20px;
+}
+.slick-slide img {
+	width: 100%;
+}
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+
+.slick-arrow {
+	/*display: none; is inline..*/
+	display: inline;
+
+	position: relative;
+}
+.slick-next {
+	color: red;
+}
