@@ -25,7 +25,16 @@ New Proposed date and times:
 | Mon | Wed | Fri | Focus | 
 |---|---|---|---|  
 | 6th | 8th | 10th | Mini-Projects. Learning necessary skills | 
-| 13th | 15th | 17th | Guided Project. Go through the creation of the final Retro game. Those comfortable are free to work on other their own retro game idea. |
+| 13th | 15th | 17th | Guided Project. Go through the creation of the final Retro game. Those comfortable are free to work on other their own retro game idea. |  
+
+* these are sequential sessions. Attendance to all is highly recommended.
+
+##### Continuation Plan
+As mentioned in the old schedule, after the bootcamp, interested parties will make DIY arcade cabinets to be displayed as a charity art installment. Hopefully that will get them connected with the Bank of Hawaii Center for Entrepreneurship & Innovation, Makerspace, and FCCG while doing something visible and helpful for the community.  
+
+##### Continuation in Game development
+Besides being able to continue game dev at FCCG, if this bootcamp sparks a lot of interest, we can host the Guam chapter of the Global Game Jam the next year.
+
 
 
 ---
@@ -127,7 +136,7 @@ Some topics we should probably be familiar/comfortable with before the bootcamp:
 * recommend / force people to group up to make the projects? Maybe even to go through the curriculum?
 * choose some set projects that we can recommend, go through how their structure should be beforehand and define sections that could be delegated to people to help with teamwork? Nudge them that direction when they go through it? ... not sounding like such a great idea anymore.
 * Pi/parts as prizes at least.
-* have sponsors donate parts/Pis (old parts or new) to the game cabinets after the bootcamp and in exchange we put their logos and such on the game cabinet they sponsored?
+* ask sponsors to donate parts/Pis (old parts or new) to the game cabinets after the bootcamp and in exchange we put their logos and such on the game cabinet they sponsored?
     * have the teams present their game idea and designs to the sponsors and have the sponsors choose "teams"? kinda like a competition between sponsors
 
 
