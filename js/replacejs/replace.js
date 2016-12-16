@@ -2,9 +2,9 @@
 
 var ReplaceJs = function (config)
 {
-    this.duration = 2500;
-    this.interval = 68;
-    this.timeout = 1000;
+    this.duration = 3500; //2500
+    this.interval = 68; //68
+    this.timeout = 1000; //1000
 
     if (typeof config.element === 'undefined' || config.element === null)
     {
