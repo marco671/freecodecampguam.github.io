@@ -95,3 +95,6 @@ ENV/
 # floobits stuff
 .floo*
 floo-links.txt
+
+# various workspaces
+slick-1.6.0
