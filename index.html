@@ -72,8 +72,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-               <a id="header-text" class="navbar-brand hidden-xs" href="index.html">FreeCodeCampGuam</a>
-              <a id="header-text" class="navbar-brand visible-xs-* hidden-sm hidden-md hidden-lg" href="index.html">FCCG</a>
+               <a id="header-text" class="logo-font navbar-brand hidden-xs" href="index.html">FreeCodeCampGuam</a>
+              <a id="header-text" class="logo-font navbar-brand visible-xs-* hidden-sm hidden-md hidden-lg" href="index.html">FCCG</a>
             </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
@@ -93,13 +93,33 @@
     ================================================== -->
   <section class="splashCarousel">
     <div>
-      <div class="card">
-        <img class="card-img-top img-fluid img-responsive" src="http://lorempixel.com/600/400/nature/" alt="First slide">
+      <div class="card card-inverse text-xs-center">
+        <img class="card-img img-fluid img-responsive" src="images/OceanCompZoom_Hexel-0.2_hiRes.png" alt="Card First slide">
+        <div class="card-img-overlay">
+          <h1 class="card-title logo-font">Free Code Camp Guam</h1>
+          <div class="row card-block">
+            <div class="col-lg-2 col-md-2"></div>
+            <div class="col-lg-2 col-md-2 col-xs-3">
+              <img src="images/landingIcons/landingIcons_learn.svg" alt="learn">
+            </div>
+            <div class="col-lg-2 col-md-2 col-xs-3">
+              <img src="images/landingIcons/landingIcons_connect.svg" alt="learn">
+            </div>
+            <div class="col-lg-2 col-md-2 col-xs-3">
+              <img src="images/landingIcons/landingIcons_portfolio.svg" alt="learn">
+            </div>
+            <div class="col-lg-2 col-md-2 col-xs-3">
+              <img src="images/landingIcons/landingIcons_nonprofits.svg" alt="learn">
+            </div>
+            <div class="col-lg-2 col-md-2"></div>
+
+          </div>
+        </div>
       </div>
     </div>
     <div>
       <div class="card">
-        <img class="card-img-top img-fluid img-responsive" src="http://lorempixel.com/600/400/nature/" alt="Second slide">
+        <img class="card-img-top img-fluid img-responsive" src="images/JFK_init_2.JPG" alt="Second slide">
       </div>
     </div>
     <div>
@@ -227,8 +247,6 @@
       $('.splashCarousel').slick({
         focusOnSelect: true,
         arrows: true,
-        centerMode: true,
-        centerPadding: '60px',
         dots: true,
         slidesToShow: 1,
         responsive: [
@@ -236,8 +254,8 @@
             breakpoint: 768,
             settings: {
               arrows: false,
-              centerMode: true,
-              centerPadding: '40px',
+              /*centerMode: true,
+              centerPadding: '40px',*/
               slidesToShow: 1
             }
           },
@@ -245,7 +263,6 @@
             breakpoint: 480,
             settings: {
               arrows: false,
-              centerMode: true,
               centerPadding: '10px',
               slidesToShow: 1,
               dots: false
