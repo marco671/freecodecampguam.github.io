@@ -18,6 +18,14 @@ canvas {
   top: 0;
   margin-left: -25%;
 }
+.canvas-bg {
+  width: 100%;
+  height: 700px;
+  background-color: rgb(30,30,40);
+  position: absolute;
+  top:0;
+  z-index:-3;
+}
 
 #override-carousel {
   position: absolute;

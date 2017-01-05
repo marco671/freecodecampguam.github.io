@@ -6,7 +6,7 @@ bgc = [30,30,40]
 fr = 10
 function setup() {
   frameRate(fr)
-  background(bgc[0],bgc[1],bgc[2]);
+  //background(bgc[0],bgc[1],bgc[2]);
   // displayWidth
   createCanvas(windowWidth*1.5, 700);
   for (var i=0; i<200; i++) {
@@ -50,7 +50,7 @@ function draw() {
     }
   }
   clear()
-  background(bgc[0],bgc[1],bgc[2]);
+  //background(bgc[0],bgc[1],bgc[2]);
 
   for (var i=0; i<hexels.length; i++) {
     draw_hexel(hexels[i]);
