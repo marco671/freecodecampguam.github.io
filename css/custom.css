@@ -3,7 +3,7 @@ body {
   overflow-x: hidden;
 }
 .navbar-inverse {
-	background-color: rgba(0,100,0,.5); /*#006400;*/
+	background-color: rgba(0,100,0,.7); /*#006400;*/
   border: 0;
   z-index: -2;
 }

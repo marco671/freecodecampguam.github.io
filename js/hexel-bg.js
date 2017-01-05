@@ -1,7 +1,9 @@
 // image-rendering: -webkit-optimize-contrast !important;
 hexels = []
+bgc = [30,30,40]
 function setup() {
   createCanvas(window.screen.width*1.5, 700);
+  background(bgc[0],bgc[1],bgc[2]);
   for (var i=0; i<200; i++) {
     colliding = false;
     hexel = new Hexel()
@@ -33,6 +35,8 @@ function draw() {
     }
   }
   clear()
+  background(bgc[0],bgc[1],bgc[2]);
+
   for (var i=0; i<hexels.length; i++) {
     draw_hexel(hexels[i]);
   }
