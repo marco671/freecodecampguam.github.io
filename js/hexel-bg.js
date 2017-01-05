@@ -87,7 +87,7 @@ function Hexel() {
   self.deathTheshold = 5
   // self.isDead = false;
 }
-k = .9
+k = .9 / (30/fr)
 // avoiding dealing with self issues
 function hexelTick(h) {
   h.col[3] *= 1-h.fade
