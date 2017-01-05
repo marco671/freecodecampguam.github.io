@@ -26,6 +26,10 @@ canvas {
   top:0;
   z-index:-3;
 }
+#canvasContainer {
+  overflow: hidden;
+  width: 100%;
+}
 
 #override-carousel {
   position: absolute;

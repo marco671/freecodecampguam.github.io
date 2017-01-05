@@ -19,6 +19,7 @@ if (!okCollide) {
   hexProportion = .3
 }
 numHexelTries = 0
+var canvas;
 function setup() {
   frameRate(fr)
   //background(bgc[0],bgc[1],bgc[2]);
@@ -26,7 +27,8 @@ function setup() {
   // won't support multiple screens I guess
   numHexelTries = windowWidth/canvasHeight * (okCollide? 100:200)
   canvasWidth = displayWidth*(1+(canvasMarginPercent*2))
-  createCanvas(canvasWidth, canvasHeight);
+  canvas = createCanvas(canvasWidth, canvasHeight);
+  canvas.parent("canvasContainer")
   for (var i=0; i<numHexelTries; i++) {
     colliding = false;
     hexel = new Hexel()
