@@ -3,7 +3,9 @@ hexels = []
 okCollide = true
 animated = true
 bgc = [30,30,40]
+fr = 10
 function setup() {
+  frameRate(fr)
   background(bgc[0],bgc[1],bgc[2]);
   // displayWidth
   createCanvas(windowWidth*1.5, 700);
@@ -33,6 +35,7 @@ window.onresize = function() {
 
 // comment out to test w/out animation
 function draw() {
+
   for(var i=0; i<hexels.length; i++) {
     hexelTick(hexels[i])
     if (hexelIsDead(hexels[i])) {
@@ -71,7 +74,7 @@ function Hexel() {
   self.y = Math.random()*height-(height*.2);
   self.rad = height/8 - Math.random()*(height/8)*(self.y/height);
   self.x = Math.random()*(width-(self.rad*2))+self.rad
-  self.fade = (Math.random()*Math.random()*.01)
+  self.fade = (Math.random()*Math.random()*.01) * (30/fr)
   self.vx = 0
   self.vy = 0
   self.fx = 0
