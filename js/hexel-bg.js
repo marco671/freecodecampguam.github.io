@@ -1,4 +1,11 @@
+//ISSUES:
+// 1. on mobile, scrolling and zooming are considered screen resizing
+//    how to ignore scrolling. also, how do you not let the user
+//    zoom out, cause it looks ugly
+
 // image-rendering: -webkit-optimize-contrast !important;
+canvasMarginPercent = .25
+
 hexels = []
 okCollide = true
 animated = true
@@ -13,7 +20,8 @@ function setup() {
   frameRate(fr)
   //background(bgc[0],bgc[1],bgc[2]);
   // displayWidth
-  createCanvas(windowWidth*1.5, 700);
+  // won't support multiple screens I guess
+  createCanvas(displayWidth*(1+(canvasMarginPercent*2)), 700);
   numHexelTries = windowWidth/700 * 200
   for (var i=0; i<numHexelTries; i++) {
     colliding = false;
@@ -29,6 +37,7 @@ function setup() {
     }
   }
 }
+/*
 window.onresize = function() {
   hexels = []
   setup()
@@ -38,6 +47,7 @@ window.onresize = function() {
     hexels[i].col[3]+=hexels[i].deathTheshold
   }
 }
+*/
 
 // comment out to test w/out animation
 function draw() {
@@ -80,7 +90,8 @@ function Hexel() {
   self.h2p = height * hexProportion;
   self.y = Math.random()*height-self.h2p;
   self.rad = self.h2p - Math.random()*self.h2p*(self.y/height);
-  self.x = Math.random()*(width-(self.rad*2))+self.rad
+  // Math.random()*(width-(self.rad*2))+self.rad
+  self.x = Math.random()*windowWidth+(windowWidth*canvasMarginPercent)
   self.fade = (Math.random()*Math.random()*.01) * (30/fr)
   self.fadeIn = (Math.random()*Math.random()*.2) * (30/fr)
   self.col = [0,
