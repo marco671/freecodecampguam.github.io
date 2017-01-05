@@ -74,23 +74,32 @@ function Hexel() {
   self.rad = height/8 - Math.random()*(height/8)*(self.y/height);
   self.x = Math.random()*(width-(self.rad*2))+self.rad
   self.fade = (Math.random()*Math.random()*.01) * (30/fr)
+  self.fadeIn = (Math.random()*Math.random()*.2) * (30/fr)
   self.col = [0,
               100+Math.random()*20-Math.random()*20,
               0,
-              Math.random()*255 * (height-self.y)/height]
+              0]
   self.vx = 0
   self.vy = 0
   self.fx = 0
   self.fy = 0
   self.ax = 0
   self.ay = 0
+  self.opacity = Math.random()*255 * (height-self.y)/height
   self.deathTheshold = 5
   // self.isDead = false;
 }
 k = .9 / (30/fr)
 // avoiding dealing with self issues
 function hexelTick(h) {
-  h.col[3] *= 1-h.fade
+  h.opacity *= 1-h.fade
+  if (h.opacity > h.col[3]) {
+    h.col[3] += h.fadeIn*(h.opacity-h.col[3])
+  }
+  else {
+    h.col[3] = h.opacity
+  }
+  /*h.col[3] = Math.min(h.col[3], h.opacity)*/
   h.fx = -k*h.vx
   h.ax += (Math.random()-.5)*h.fade*h.rad * .1
   // (Math.random()-.5)*h.fade*h.rad*2
@@ -108,7 +117,7 @@ function hexelTick(h) {
 }
 
 function hexelIsDead(h) {
-  return h.col[3]<=h.deathTheshold
+  return h.opacity<=h.deathTheshold
 }
 
 function hexelIsValid(h) {
