@@ -41,13 +41,14 @@ function draw() {
   for(var i=0; i<hexels.length; i++) {
     hexelTick(hexels[i])
     if (hexelIsDead(hexels[i])) {
+      hexels.splice(i, 1)  // allow birth/death overlap
       do {
         hexel = new Hexel()
         if (okCollide) {
           break;
         }
       } while (!hexelIsValid(hexel));
-      hexels[i] = hexel;
+      hexels.push(hexel);
       console.log('new hexel', hexel)
     }
   }
