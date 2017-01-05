@@ -14,8 +14,6 @@ body {
 canvas {
   overflow: hidden;
   z-index: -1;
-  position: absolute;
-  top: 0;
   margin-left: -25%;
 }
 .canvas-bg {
@@ -27,6 +25,8 @@ canvas {
   z-index:-3;
 }
 #canvasContainer {
+  position: absolute;
+  top: 0;
   overflow: hidden;
   width: 100%;
 }
