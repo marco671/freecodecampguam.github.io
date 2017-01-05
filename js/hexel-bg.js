@@ -4,12 +4,14 @@ okCollide = true
 animated = true
 bgc = [30,30,40]
 fr = 10
+numHexelTries = 0
 function setup() {
   frameRate(fr)
   //background(bgc[0],bgc[1],bgc[2]);
   // displayWidth
   createCanvas(windowWidth*1.5, 700);
-  for (var i=0; i<200; i++) {
+  numHexelTries = windowWidth/700 * 200
+  for (var i=0; i<numHexelTries; i++) {
     colliding = false;
     hexel = new Hexel()
     if (okCollide || hexelIsValid(hexel)) {
@@ -28,7 +30,7 @@ window.onresize = function() {
   setup()
   for (var i=0; i<hexels.length; i++) {
     hexels[i].y -= 700
-    hexels[i].col[3]/=Math.random()*5+1
+    hexels[i].col[3]/=Math.random()*10+1
     hexels[i].col[3]+=hexels[i].deathTheshold
   }
 }
