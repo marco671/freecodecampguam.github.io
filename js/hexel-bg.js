@@ -70,11 +70,14 @@ function polygon(x, y, radius, npoints) {
 
 function Hexel() {
   var self = this;
-  self.col = [0,100+Math.random()*20-Math.random()*20,0,Math.random()*255]
   self.y = Math.random()*height-(height*.2);
   self.rad = height/8 - Math.random()*(height/8)*(self.y/height);
   self.x = Math.random()*(width-(self.rad*2))+self.rad
   self.fade = (Math.random()*Math.random()*.01) * (30/fr)
+  self.col = [0,
+              100+Math.random()*20-Math.random()*20,
+              0,
+              Math.random()*255 * (height-self.y)/height]
   self.vx = 0
   self.vy = 0
   self.fx = 0
