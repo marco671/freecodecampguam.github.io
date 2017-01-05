@@ -87,8 +87,8 @@ function Hexel() {
   self.fy = 0
   self.ax = 0
   self.ay = 0
-  self.opacity = Math.random()*255 * (height-self.y)/height
-  self.deathTheshold = 5
+  self.deathTheshold = 20
+  self.opacity = Math.random()*(255-self.deathTheshold) * (height-self.y)/height + self.deathTheshold
   // self.isDead = false;
 }
 k = .9 / (30/fr)
