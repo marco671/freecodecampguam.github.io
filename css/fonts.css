@@ -12,9 +12,11 @@
 }*/
 
 
-
-#header-text{
+.logo-font {
 	font-family: saxMono, Georgia, Serif;
+}
+#header-text{
+
 }
 
 /*Roboto Medium*/
