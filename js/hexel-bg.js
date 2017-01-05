@@ -4,6 +4,10 @@ okCollide = true
 animated = true
 bgc = [30,30,40]
 fr = 10
+hexProportion = .125
+if (!okCollide) {
+  hexProportion = .3
+}
 numHexelTries = 0
 function setup() {
   frameRate(fr)
@@ -73,8 +77,9 @@ function polygon(x, y, radius, npoints) {
 
 function Hexel() {
   var self = this;
-  self.y = Math.random()*height-(height*.2);
-  self.rad = height/8 - Math.random()*(height/8)*(self.y/height);
+  self.h2p = height * hexProportion;
+  self.y = Math.random()*height-self.h2p;
+  self.rad = self.h2p - Math.random()*self.h2p*(self.y/height);
   self.x = Math.random()*(width-(self.rad*2))+self.rad
   self.fade = (Math.random()*Math.random()*.01) * (30/fr)
   self.fadeIn = (Math.random()*Math.random()*.2) * (30/fr)
@@ -108,13 +113,13 @@ function hexelTick(h) {
   // (Math.random()-.5)*h.fade*h.rad*2
   h.vx += h.ax + h.fx
   h.fy = -k*h.vy
-  h.ay = Math.random()*h.fade*20*(h.rad/(height/8))
-  // Math.random()*h.fade*20*(h.rad/(height/8))
+  h.ay = Math.random()*h.fade*20*(h.rad/h.h2p)
+  // Math.random()*h.fade*20*(h.rad/h.h2p)
   h.vy += h.ay + h.fy
   h.x += h.vx
   h.y += h.vy
   // h.x += (Math.random()-.5)*h.fade*h.rad*2
-  // h.y += Math.random()*h.fade*100*(h.rad/(height/8))
+  // h.y += Math.random()*h.fade*100*(h.rad/h.h2p)
   // h.rad *= 1-(Math.random()*h.fade)
   // h.fade *= 1.1
 }
