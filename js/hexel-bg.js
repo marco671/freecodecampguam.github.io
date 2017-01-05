@@ -4,8 +4,11 @@
 //    zoom out, cause it looks ugly
 
 // image-rendering: -webkit-optimize-contrast !important;
+// https://stackoverflow.com/questions/14270084/overflow-xhidden-doesnt-prevent-content-from-overflowing-in-mobile-browsers
+// https://stackoverflow.com/questions/18268300/overflowhidden-not-working-on-mobile-browser
 canvasMarginPercent = .25
-
+canvasHeight = 700
+canvasWidth = 0
 hexels = []
 okCollide = true
 animated = true
@@ -21,8 +24,9 @@ function setup() {
   //background(bgc[0],bgc[1],bgc[2]);
   // displayWidth
   // won't support multiple screens I guess
-  createCanvas(displayWidth*(1+(canvasMarginPercent*2)), 700);
-  numHexelTries = windowWidth/700 * 200
+  numHexelTries = windowWidth/canvasHeight * (okCollide? 100:200)
+  canvasWidth = displayWidth*(1+(canvasMarginPercent*2))
+  createCanvas(canvasWidth, canvasHeight);
   for (var i=0; i<numHexelTries; i++) {
     colliding = false;
     hexel = new Hexel()
