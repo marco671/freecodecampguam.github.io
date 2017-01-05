@@ -1,19 +1,33 @@
 // image-rendering: -webkit-optimize-contrast !important;
 hexels = []
+okCollide = true
+animated = true
 bgc = [30,30,40]
 function setup() {
-  createCanvas(window.screen.width*1.5, 700);
   background(bgc[0],bgc[1],bgc[2]);
+  // displayWidth
+  createCanvas(windowWidth*1.5, 700);
   for (var i=0; i<200; i++) {
     colliding = false;
     hexel = new Hexel()
-    if (true /*hexelIsValid(hexel)*/) {
+    if (okCollide || hexelIsValid(hexel)) {
       hexels.push(hexel)
     }
   }
   // just for testing without draw
+  if (!animated) {
+    for (var i=0; i<hexels.length; i++) {
+      draw_hexel(hexels[i]);
+    }
+  }
+}
+window.onresize = function() {
+  hexels = []
+  setup()
   for (var i=0; i<hexels.length; i++) {
-    draw_hexel(hexels[i]);
+    hexels[i].y -= 700
+    hexels[i].col[3]/=Math.random()*5+1
+    hexels[i].col[3]+=hexels[i].deathTheshold
   }
 }
 
@@ -23,13 +37,11 @@ function draw() {
     hexelTick(hexels[i])
     if (hexelIsDead(hexels[i])) {
       do {
-        valid = false;
         hexel = new Hexel()
-        if(!hexelIsValid(hexel)) {
-          valid = true;
+        if (okCollide) {
+          break;
         }
-        valid = true;
-      } while (!valid);
+      } while (!hexelIsValid(hexel));
       hexels[i] = hexel;
       console.log('new hexel', hexel)
     }
@@ -55,25 +67,42 @@ function polygon(x, y, radius, npoints) {
 
 function Hexel() {
   var self = this;
-  self.col = [0,100+random()*20-random()*20,0,random()*255]
-  self.y = random()*(height*.8);
-  self.rad = height/8 - random()*(height/8)*(self.y/height);
-  self.x = random()*(width-(self.rad*2))+self.rad
-  self.fade = (random()*random()*.01)
+  self.col = [0,100+Math.random()*20-Math.random()*20,0,Math.random()*255]
+  self.y = Math.random()*height-(height*.2);
+  self.rad = height/8 - Math.random()*(height/8)*(self.y/height);
+  self.x = Math.random()*(width-(self.rad*2))+self.rad
+  self.fade = (Math.random()*Math.random()*.01)
+  self.vx = 0
+  self.vy = 0
+  self.fx = 0
+  self.fy = 0
+  self.ax = 0
+  self.ay = 0
+  self.deathTheshold = 5
   // self.isDead = false;
 }
-
+k = .9
 // avoiding dealing with self issues
 function hexelTick(h) {
   h.col[3] *= 1-h.fade
-  h.x += (random()-.5)*h.fade*h.rad
-  h.y += random()*h.fade*100*(h.rad/(height/8))
-  h.rad *= 1-(random()*h.fade)
+  h.fx = -k*h.vx
+  h.ax += (Math.random()-.5)*h.fade*h.rad * .1
+  // (Math.random()-.5)*h.fade*h.rad*2
+  h.vx += h.ax + h.fx
+  h.fy = -k*h.vy
+  h.ay = Math.random()*h.fade*20*(h.rad/(height/8))
+  // Math.random()*h.fade*20*(h.rad/(height/8))
+  h.vy += h.ay + h.fy
+  h.x += h.vx
+  h.y += h.vy
+  // h.x += (Math.random()-.5)*h.fade*h.rad*2
+  // h.y += Math.random()*h.fade*100*(h.rad/(height/8))
+  // h.rad *= 1-(Math.random()*h.fade)
   // h.fade *= 1.1
 }
 
 function hexelIsDead(h) {
-  return h.col[3]<=5
+  return h.col[3]<=h.deathTheshold
 }
 
 function hexelIsValid(h) {
