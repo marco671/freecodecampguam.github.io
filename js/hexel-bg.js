@@ -1,38 +1,80 @@
+//ISSUES:
+// 1. on mobile, scrolling and zooming are considered screen resizing
+//    how to ignore scrolling. also, how do you not let the user
+//    zoom out, cause it looks ugly
+
 // image-rendering: -webkit-optimize-contrast !important;
+// https://stackoverflow.com/questions/14270084/overflow-xhidden-doesnt-prevent-content-from-overflowing-in-mobile-browsers
+// https://stackoverflow.com/questions/18268300/overflowhidden-not-working-on-mobile-browser
+canvasMarginPercent = .25
+canvasHeight = 700
+canvasWidth = 0
 hexels = []
+okCollide = true
+animated = true
+bgc = [30,30,40]
+fr = 10
+hexProportion = .125
+if (!okCollide) {
+  hexProportion = .3
+}
+numHexelTries = 0
+var canvas;
 function setup() {
-  createCanvas(window.screen.width*1.5, 700);
-  for (var i=0; i<200; i++) {
+  frameRate(fr)
+  //background(bgc[0],bgc[1],bgc[2]);
+  // displayWidth
+  // won't support multiple screens I guess
+  numHexelTries = windowWidth/canvasHeight * (okCollide? 100:200)
+  canvasWidth = displayWidth*(1+(canvasMarginPercent*2))
+  canvas = createCanvas(canvasWidth, canvasHeight);
+  canvas.parent("canvasContainer")
+  for (var i=0; i<numHexelTries; i++) {
     colliding = false;
     hexel = new Hexel()
-    if (true /*hexelIsValid(hexel)*/) {
+    if (okCollide || hexelIsValid(hexel)) {
       hexels.push(hexel)
     }
   }
   // just for testing without draw
-  for (var i=0; i<hexels.length; i++) {
-    draw_hexel(hexels[i]);
+  if (!animated) {
+    for (var i=0; i<hexels.length; i++) {
+      draw_hexel(hexels[i]);
+    }
   }
 }
+/*
+window.onresize = function() {
+  hexels = []
+  setup()
+  for (var i=0; i<hexels.length; i++) {
+    hexels[i].y -= 700
+    hexels[i].col[3]/=Math.random()*10+1
+    hexels[i].col[3]+=hexels[i].deathTheshold
+  }
+}
+*/
 
 // comment out to test w/out animation
 function draw() {
+
   for(var i=0; i<hexels.length; i++) {
     hexelTick(hexels[i])
     if (hexelIsDead(hexels[i])) {
+      hexels.splice(i, 1)  // allow birth/death overlap
       do {
-        valid = false;
         hexel = new Hexel()
-        if(!hexelIsValid(hexel)) {
-          valid = true;
+        if (okCollide) {
+          break;
         }
-        valid = true;
-      } while (!valid);
-      hexels[i] = hexel;
+      } while (!hexelIsValid(hexel));
+      hexels.push(hexel);
       console.log('new hexel', hexel)
     }
   }
   clear()
+  //background(bgc[0],bgc[1],bgc[2]);
+
   for (var i=0; i<hexels.length; i++) {
     draw_hexel(hexels[i]);
   }
@@ -51,25 +93,56 @@ function polygon(x, y, radius, npoints) {
 
 function Hexel() {
   var self = this;
-  self.col = [0,100+random()*20-random()*20,0,random()*255]
-  self.y = random()*(height*.8);
-  self.rad = height/8 - random()*(height/8)*(self.y/height);
-  self.x = random()*(width-(self.rad*2))+self.rad
-  self.fade = (random()*random()*.01)
+  self.h2p = height * hexProportion;
+  self.y = Math.random()*height-self.h2p;
+  self.rad = self.h2p - Math.random()*self.h2p*(self.y/height);
+  // Math.random()*(width-(self.rad*2))+self.rad
+  self.x = Math.random()*windowWidth+(windowWidth*canvasMarginPercent)
+  self.fade = (Math.random()*Math.random()*.01) * (30/fr)
+  self.fadeIn = (Math.random()*Math.random()*.2) * (30/fr)
+  self.col = [0,
+              100+Math.random()*20-Math.random()*20,
+              0,
+              0]
+  self.vx = 0
+  self.vy = 0
+  self.fx = 0
+  self.fy = 0
+  self.ax = 0
+  self.ay = 0
+  self.deathTheshold = 20
+  self.opacity = Math.random()*(255-self.deathTheshold) * (height-self.y)/height + self.deathTheshold
   // self.isDead = false;
 }
-
+k = .9 / (30/fr)
 // avoiding dealing with self issues
 function hexelTick(h) {
-  h.col[3] *= 1-h.fade
-  h.x += (random()-.5)*h.fade*h.rad
-  h.y += random()*h.fade*100*(h.rad/(height/8))
-  h.rad *= 1-(random()*h.fade)
+  h.opacity *= 1-h.fade
+  if (h.opacity > h.col[3]) {
+    h.col[3] += h.fadeIn*(h.opacity-h.col[3])
+  }
+  else {
+    h.col[3] = h.opacity
+  }
+  /*h.col[3] = Math.min(h.col[3], h.opacity)*/
+  h.fx = -k*h.vx
+  h.ax += (Math.random()-.5)*h.fade*h.rad * .1
+  // (Math.random()-.5)*h.fade*h.rad*2
+  h.vx += h.ax + h.fx
+  h.fy = -k*h.vy
+  h.ay = Math.random()*h.fade*20*(h.rad/h.h2p)
+  // Math.random()*h.fade*20*(h.rad/h.h2p)
+  h.vy += h.ay + h.fy
+  h.x += h.vx
+  h.y += h.vy
+  // h.x += (Math.random()-.5)*h.fade*h.rad*2
+  // h.y += Math.random()*h.fade*100*(h.rad/h.h2p)
+  // h.rad *= 1-(Math.random()*h.fade)
   // h.fade *= 1.1
 }
 
 function hexelIsDead(h) {
-  return h.col[3]<=5
+  return h.opacity<=h.deathTheshold
 }
 
 function hexelIsValid(h) {

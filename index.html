@@ -17,7 +17,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, height=device-height">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <meta name="description" content="">
   <meta name="author" content="">
@@ -60,6 +60,7 @@
 ================================================== -->
 
 <body>
+  <div id="canvasContainer"></div>
   <div class="navbar-wrapper">
     <div class="container">
 
@@ -87,7 +88,7 @@
 
     </div>
   </div>
-
+  <div class="canvas-bg"></div>
 
   <!-- Carousel
     ================================================== -->
@@ -254,8 +255,8 @@
             breakpoint: 768,
             settings: {
               arrows: false,
-              /*centerMode: true,
-              centerPadding: '40px',*/
+              /*centerMode: true,*/
+              centerPadding: '40px',
               slidesToShow: 1
             }
           },
