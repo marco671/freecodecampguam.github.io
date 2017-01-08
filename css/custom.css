@@ -6,9 +6,26 @@ body {
 	background-color: rgba(0,100,0,.7); /*#006400;*/
   border: 0;
   z-index: -2;
+  -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
 }
 .navbar-inverse .container {
   z-index: 1;
+}
+
+.header-text {
+  font-size: 2rem;
+}
+.navbar-brand {
+  padding-top: 1rem;
+}
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-nav>li>a {
+  color: #ffffff;
+}
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-nav>li>a:hover {
+  color: #9d9d9d;
 }
 
 canvas {
