@@ -16,6 +16,25 @@ html, body {
 .slick-slide {
   margin: 0px 20px;
 }
+@media screen and (min-width: 1080px) {
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 30px;
+  }
+  .slick-prev {
+    text-indent: -10px; /* must be 20 minus font-size from 4 lines above */
+  }
+
+}
+@media screen and (min-width: 1130px) {
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 60px;
+  }
+  .slick-prev {
+    text-indent: -40px; /* must be 20 minus font-size from 4 lines above */
+  }
+}
 @media (max-width: 768px) {
   .slick-slide {
     margin: 0px 5px;
@@ -35,11 +54,7 @@ html, body {
 }
 .slick-prev:before,
 .slick-next:before {
-  font-size: 60px;
   color: black;
-}
-.slick-prev {
-  text-indent: -40px; /* must be 20 minus font-size from 4 lines above */
 }
 /**/
 .slick-arrow {
