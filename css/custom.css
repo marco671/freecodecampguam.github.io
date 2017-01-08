@@ -1,9 +1,36 @@
 body {
 	padding-top: 50px;
+  overflow-x: hidden;
 }
 .navbar-inverse {
-	background-color: #006400;
+	background-color: rgba(0,100,0,.7); /*#006400;*/
+  border: 0;
+  z-index: -2;
 }
+.navbar-inverse .container {
+  z-index: 1;
+}
+
+canvas {
+  overflow: hidden;
+  z-index: -1;
+  margin-left: -25%;
+}
+.canvas-bg {
+  width: 100%;
+  height: 700px;
+  background-color: rgb(30,30,40);
+  position: absolute;
+  top:0;
+  z-index:-3;
+}
+#canvasContainer {
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
 #override-carousel {
   position: absolute;
   object-fit: cover; /* Makes the image maintain pixel ratio and crops instead of stretching */
