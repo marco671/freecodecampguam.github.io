@@ -14,68 +14,73 @@
 </style>
 
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="logos/fcc/favicon.ico">
 
-    <title>FCCG | About</title>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="logos/fcc/favicon.ico">
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/custom.css" rel="stylesheet">
+  <title>FCCG | About</title>
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="bootstrap-3.3.7/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="bootstrap-3.3.7/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="css/carousel.css" rel="stylesheet">
-    <link href="css/custom.css" rel="stylesheet">
-    <link href="css/fonts.css" media="all" rel="stylesheet" type="text/css"/>
+  <!-- Bootstrap 4 for cards :P -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
 
-    <!--TEMPORARY - Font Imports-->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
-  </head>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Custom styles for this template -->
+  <link href="css/carousel.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+  <link href="css/fonts.css" media="all" rel="stylesheet" type="text/css"/>
+
+  <!--TEMPORARY - Font Imports-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+</head>
 <!-- NAVBAR
 ================================================== -->
-  <body>
-    <div class="navbar-wrapper">
-      <div class="container">
+<body>
+  <div id="canvasContainer"></div>
+  <div class="navbar-wrapper">
+    <div class="container">
 
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a id="header-text" class="navbar-brand hidden-xs" href="index.html">FreeCodeCampGuam</a>
-              <a id="header-text" class="navbar-brand visible-xs-* hidden-sm hidden-md hidden-lg" href="index.html">FCCG</a>
+              <a class="logo-font navbar-brand hidden-xs header-text" href="index.html">FreeCodeCampGuam</a>
+              <a class="logo-font navbar-brand visible-xs-* hidden-sm hidden-md hidden-lg header-text" href="index.html">FCCG</a>
             </div>
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li><a href="index.html">Home</a></li>
-                <li class="active"><a href="about.html">About</a></li>
-                <li><a href="sponsors.html">Sponsors</a></li>
-              </ul>
-            </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="sponsors.html">Sponsors</a></li>
+            </ul>
           </div>
-        </nav>
+        </div>
+      </nav>
 
-      </div>
     </div>
+  </div>
 
 
     <!--
@@ -225,7 +230,7 @@
           <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis laboriosam sequi, sapiente iure molestias ea reprehenderit vero aliquam laborum dolor voluptate blanditiis porro, facere, inventore distinctio! Obcaecati, et. Est, aliquam?</p>
         </div>
       </div>
-      
+
       <!-- FOOTER -->
       <footer class="bd-footer text-muted">
         <div class="container">
@@ -264,5 +269,5 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="bootstrap-3.3.7/assets/js/ie10-viewport-bug-workaround.js"></script>
-  </body>
+</body>
 </html>
