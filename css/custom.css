@@ -78,3 +78,9 @@ a#header-text {
 .container hr.featurette-divider + h2.featurette-heading {
   margin-top: 0;
 }
+.bd-footer {
+  margin-top: 5%;
+}
+.bd-footer .col-md-4 {
+  padding: 0;
+}
