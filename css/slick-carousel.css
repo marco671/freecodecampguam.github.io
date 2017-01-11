@@ -1,12 +1,53 @@
 html, body {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 * {
   box-sizing: border-box;
 }
 
 .splashCarousel {
+  z-index: 2;
+  max-width: 1000px;
+  width: 100%;
+  height: 100%;
+  margin: 66px auto;
+}
+.slick-slide {
+  margin: 20px 60px;
+}
+@media screen and (min-width: 1080px) {
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 30px;
+  }
+  .slick-prev {
+    text-indent: -10px; /* must be 20 minus font-size from 4 lines above */
+  }
+
+}
+@media screen and (min-width: 1130px) {
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 60px;
+  }
+  .slick-prev {
+    text-indent: -40px; /* must be 20 minus font-size from 4 lines above */
+  }
+}
+@media (max-width: 768px) {
+  .slick-slide {
+    margin: 0px 5px;
+  }
+}
+@media (max-width: 480px) {
+  .slick-slide {
+    margin: 0px 0px;
+    border-radius: 0;
+  }
+  .slick-slide img {
+    border-radius: 0;
+  }
 	z-index: 2;
 	max-width: 1000px;
 	width: 100%;
@@ -40,19 +81,18 @@ html, body {
 	}
 }
 .slick-slide img {
-	width: 100%;
+  width: 100%;
 }
 .slick-prev:before,
 .slick-next:before {
-    color: black;
+  color: black;
 }
-
+/**/
 .slick-arrow {
-	/*display: none; is inline..*/
-	display: inline;
-
-	position: absolute;
+  /*display: none; is inline..*/
+  display: inline;
+  position: absolute;
 }
 .slick-next {
-	color: red;
+  color: red;
 }

@@ -70,3 +70,7 @@ canvas {
 	border-radius: 0px;
 }
 }
+
+a#header-text {
+  line-height: 50px;
+}
