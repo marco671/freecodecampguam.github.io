@@ -93,6 +93,9 @@ body {
   letter-spacing: -1px;
 }
 
+.featurette-image {
+  margin-top: 30px;
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
