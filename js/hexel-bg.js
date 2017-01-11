@@ -69,7 +69,7 @@ function draw() {
         }
       } while (!hexelIsValid(hexel));
       hexels.push(hexel);
-      console.log('new hexel', hexel)
+    //   console.log('new hexel', hexel)
     }
   }
   clear()
